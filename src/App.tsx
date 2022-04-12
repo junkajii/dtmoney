@@ -5,7 +5,7 @@ import { NewTransactionModal } from './components/NewTransactionModal'
 import { Dashboard } from './components/Dashboard'
 import { GlobalStyle } from './styles/global'
 
-Modal.setAppElement('#yourAppElement')
+Modal.setAppElement('#root')
 
 export function App() {
   const [ isNewTransactionModelOpen, setIsNewTransactionModelOpen ] = useState(false)

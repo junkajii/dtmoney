@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   :root {
@@ -37,9 +37,9 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
   }
-  
+
   h1, h2, h3, h4, h5, h5, strong {
-    font-weight: 600;    
+    font-weight: 600;
   }
 
   button {
@@ -49,6 +49,37 @@ export const GlobalStyle = createGlobalStyle`
   [disable] {
     opacity: 0.6;
     cursor: not-allowed;
+  }
+
+  .react-model-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .react-modal-content {
+    background-color: var(--background);
+    width: 100%;
+    max-width: 576px;
+    padding: 3rem;
+    position: relative;
+    border-radius: 0.25rem;
+  }
+
+  .react-modal-close {
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    top: 1.5rem;
+    right: 1.5rem;
+    transition: filter 0.9s;
+
+     &:hover {
+       filter: brightness(0.8);
+     }
   }
 
 `;
