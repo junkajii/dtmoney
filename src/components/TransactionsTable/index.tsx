@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { api } from '../../services/api'
 import { Container } from './styles'
 
-interface Transaction {  
+interface Transaction {
   id: number,
   title: string,
   type: string,
